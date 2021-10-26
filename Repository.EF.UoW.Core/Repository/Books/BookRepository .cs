@@ -3,7 +3,7 @@ using Microsoft.Extensions.Logging;
 using Repository.EF.UoW.Core.Models;
 using System.Linq.Expressions;
 
-namespace Repository.EF.UoW.Core.Repository.Employees
+namespace Repository.EF.UoW.Core.Repository.Books
 {
     public class BookRepository : GenericRepository<Book>, IBookRepository
     {

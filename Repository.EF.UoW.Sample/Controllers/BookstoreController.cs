@@ -39,6 +39,13 @@ namespace Repository.EF.UoW.Sample.Controllers
             return await _unitOfWork.Books.Find(byGenre);
         }
 
+        [HttpGet("getbygenre/{title}")]
+        public async Task<IEnumerable<Book>> GetByName(string title)
+        {
+            Expression<Func<Book, bool>> byTitle = s => s.Title == title;
+            return await _unitOfWork.Books.Find(byTitle);
+        }
+
 
         // POST api/<Books>
         [HttpPost("AddScenario")]

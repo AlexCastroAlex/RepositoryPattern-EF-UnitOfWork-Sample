@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
-using Repository.EF.UoW.Core.Repository.Employees;
-using Repository.EF.UoW.Core.Repository.TasksToDo;
+using Repository.EF.UoW.Core.Repository.Books;
+using Repository.EF.UoW.Core.Repository.Catalogs;
 
 namespace Repository.EF.UoW.Core.Configuration;
 
